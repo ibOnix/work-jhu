@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # guessinggame.sh
 
-answer=$(find . -maxdepth 1 -type f | wc -l)
+answer=$(find . -maxdepth 1 -type f -name '[!.]*'| wc -l)
 times=0
 
 echo "Hello, what's your name?"
