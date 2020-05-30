@@ -25,10 +25,10 @@ function check {
 		echo "It's magic! You only have needed $times attempts ; )"
 		echo "If you want to play again, just take me to another place in your computer."
 
-		elif [[ $attempt -gt $answer ]] && echo "Your guess $attempt was too high." || echo "Your guess $attempt was too low."
-		then
+	elif [[ $attempt -gt $answer ]] && echo "Your guess $attempt was too high." || echo "Your guess $attempt was too low."
+	then
 		echo "Try again: (The program will end when you hit the answer.)"
-		fi
+	fi
 }
 
 while [[ $attempt -ne $answer ]]
