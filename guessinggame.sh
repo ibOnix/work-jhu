@@ -2,6 +2,7 @@
 # guessinggame.sh
 
 answer=$(find . -maxdepth 1 -type f | wc -l)
+times=0
 
 echo "Hello, what's your name?"
 read name
@@ -12,14 +13,15 @@ read response
 
 function check {
 	read attempt
+	times=$(($times + 1))
 	if [[ $attempt -eq $answer ]]
 	then
-		echo "It's magic! Or no file here? Anyway, congratulations."
+		echo "It's magic! You only have needed $times attempts ; )"
 		echo "If you want to play again, just take me to another place in your computer."
 
 		elif [[ $attempt -gt $answer ]] && echo "Your guess $attempt was too high." || echo "Your guess $attempt was too low."
 		then
-		echo "Try again. The program will end when you hit the answer."
+		echo "Try again: (The program will end when you hit the answer.)"
 		fi
 }
 
