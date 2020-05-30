@@ -5,6 +5,8 @@
 
 Let me tell you why you are here. You have come because you know something. What you know you can't explain but you feel it. You've felt it your whole course, felt that something is wrong with your code. You don't know what, but it's there like a splinter in your mind, driving you mad. It is this feeling that brought you to me. Do you know what I'm talking about?... THE GUESSING GAME?
 
+THE GUESSING GAME?
+
 Do you want to know what it is? The Guessing Game is everywhere, it's all around us, here even in this website. You can see it out your window or on your shell. You feel it when you go to work, or go to coursera to pay your taxes. It is the world that has been pulled over your eyes to blind you from the truth.
 
 You are a slave. Like everyone else, you payed your subscription, hoping the course would be easier, well guided, with a lot of videos. A prison for your mind. Unfortunately, no one can be told what code the Guessing Game is. You have to see it for yourself.
@@ -17,4 +19,4 @@ Sean Kross, are we approved?
 37
 
 **Last Update**: 
-Sat, 30 May 2020 23:48:39 +0200
+Sat, 30 May 2020 23:51:00 +0200

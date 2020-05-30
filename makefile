@@ -18,6 +18,10 @@ README.md: guessinggame.sh
 		
 		echo "" >> README.md
 		
+		echo "THE GUESSING GAME?" >> README.md
+		
+		echo "" >> README.md
+		
 		echo "Do you want to know what it is? The Guessing Game is everywhere, it's all around us, here even in this website. You can see it out your window or on your shell. You feel it when you go to work, or go to coursera to pay your taxes. It is the world that has been pulled over your eyes to blind you from the truth." >> README.md
 		
 		echo "" >> README.md
