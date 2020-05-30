@@ -9,9 +9,7 @@ README.md: guessinggame.sh
 		echo "## Johns Hopkins University | [The Unix Workbench](https://seankross.com/the-unix-workbench/) | Guessing Game." > README.md
 		echo "*My modest solution to their proposal*." >> README.md
 		echo "\n**The assignment**: bla bla bla" >> README.md
-		echo "" >> README.md
-		echo "\n**Do you know how many lines have my guessinggame.sh file?**: " >> README.md
+		echo "\n**Number of lines of code in guessinggame.sh**: " >> README.md
 		wc -l >> README.md
-		echo "" >> README.md
 		echo "\n**Last Update**: " >> README.md
 		date -R -r README.md >> README.md		
