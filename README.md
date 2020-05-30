@@ -3,7 +3,7 @@
 
 **Synopsis**:  I imagine, right now, you must be feeling a bit like Alice, tumbling down the rabbit hole? I can see it in your eyes. You have the look of a desperate man who accepts any code because he is expecting to wake up of this nightmare.
 
-Let me tell you why you are here. You have come because you know something. What you know you can't explain but you feel it. You've felt it your whole course, felt that something is wrong with your code. You don't know what, but it's there like a splinter in your mind, driving you mad. It is this feeling that brought you to me. Do you know what I'm talking about?... THE GUESSING GAME?
+Let me tell you why you are here. You have come because you know something. What you know you can't explain but you feel it. You've felt it your whole course, felt that something is wrong with your code. You don't know what, but it's there like a splinter in your mind, driving you mad. It is this feeling that brought you to me. Do you know what I'm talking about?
 
 THE GUESSING GAME?
 
@@ -19,4 +19,4 @@ Sean Kross, are we approved?
 37
 
 **Last Update**: 
-Sat, 30 May 2020 23:51:00 +0200
+Sat, 30 May 2020 23:52:44 +0200

@@ -14,7 +14,7 @@ README.md: guessinggame.sh
 		
 		echo "" >> README.md
 		
-		echo "Let me tell you why you are here. You have come because you know something. What you know you can't explain but you feel it. You've felt it your whole course, felt that something is wrong with your code. You don't know what, but it's there like a splinter in your mind, driving you mad. It is this feeling that brought you to me. Do you know what I'm talking about?... THE GUESSING GAME?" >> README.md
+		echo "Let me tell you why you are here. You have come because you know something. What you know you can't explain but you feel it. You've felt it your whole course, felt that something is wrong with your code. You don't know what, but it's there like a splinter in your mind, driving you mad. It is this feeling that brought you to me. Do you know what I'm talking about?" >> README.md
 		
 		echo "" >> README.md
 		
