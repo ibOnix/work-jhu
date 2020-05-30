@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # guessinggame.sh
 
-answer=$(ls | wc -l)
+answer=$(find . -maxdepth 1 -type f | wc -l)
 
 echo "Hello, what's your name?"
 read name
