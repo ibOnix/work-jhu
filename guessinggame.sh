@@ -22,7 +22,7 @@ function check {
 	times=$(($times + 1))
 	if [[ $attempt -eq $answer ]]
 	then
-		echo "It's magic! You only have needed $times attempts ; a)"
+		echo "It's magic! You only have needed $times attempts ; )"
 		echo "If you want to play again, just take me to another place in your computer."
 
 		elif [[ $attempt -gt $answer ]] && echo "Your guess $attempt was too high." || echo "Your guess $attempt was too low."
