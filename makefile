@@ -40,9 +40,9 @@ README.md: guessinggame.sh
 		
 		echo "***" >> README.md
 		
-		echo "> - \n**Lines of code in guessinggame.sh**: " >> README.md
+		echo "> \n**Lines of code in guessinggame.sh**: " >> README.md
 		grep -c '' guessinggame.sh >> README.md
-		echo "- \n**Last Update**: " >> README.md
+		echo "> \n**Last Update**: " >> README.md
 		date -R -r README.md >> README.md
 		echo "" >> README.md
 		echo "###### \* Paraphrasing 'The Matrix' Shooting Script by Larry and Andy Wachowski." >> README.md

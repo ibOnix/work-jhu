@@ -16,12 +16,12 @@ This is your last chance. After this, there is no going back. You take the blue 
 
 Sean Kross, are we approved?
 ***
-> - 
+> 
 **Lines of code in guessinggame.sh**: 
 38
-- 
+> 
 **Last Update**: 
-Sun, 31 May 2020 18:18:10 +0200
+Sun, 31 May 2020 18:22:52 +0200
 
 ###### \* Paraphrasing 'The Matrix' Shooting Script by Larry and Andy Wachowski.
 
