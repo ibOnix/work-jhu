@@ -21,14 +21,22 @@ fi
 function check {
 	read attempt
 	times=$(($times + 1))
-	if [[ $attempt -eq $answer ]]
+	
+	if [[ $attempt =~ [0-9] ]]
 	then
-		echo "You only have needed $times attempts... You are the One ; )"
-		echo "Ready for more? Change script location."
+	
+		if [[ $attempt -eq $answer ]]
+		then
+			echo "You only have needed $times attempts... You are the One ; )"
+			echo "Ready for more? Change script location."
 
-	elif [[ $attempt -gt $answer ]] && echo "Your guess $attempt was too high." || echo "Your guess $attempt was too low."
-	then
-		echo "Targeting... almost there. Try again."
+		elif [[ $attempt -gt $answer ]] && echo "Your guess $attempt was too high." || echo "Your guess $attempt was too low."
+		then
+			echo "Targeting... almost there. Try again."
+		fi
+		
+	else
+		echo "$name, we have a typo."
 	fi
 }
 
