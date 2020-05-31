@@ -1,6 +1,6 @@
 ## Johns Hopkins University | The Unix Workbench | Guessing Game
 
-all: README.md clean
+all: clean README.md
 
 
 README.md: guessinggame.sh
@@ -10,7 +10,9 @@ README.md: guessinggame.sh
 		echo "## Johns Hopkins University | [The Unix Workbench](https://seankross.com/the-unix-workbench/) | Guessing Game." > README.md
 		echo "*An stressful solution to the [Coursera](https://www.coursera.org/learn/unix) proposal*." >> README.md
 		
-		echo "\n**Synopsis**:  I imagine, right now, you must be feeling a bit like Alice, tumbling down the rabbit hole? I can see it in your eyes. You have the look of a desperate man who accepts any code because he is expecting to wake up of this nightmare." >> README.md
+		echo "" >> README.md
+		
+		echo "\n**Synopsis** \*:  I imagine, right now, you must be feeling a bit like Alice, tumbling down the rabbit hole? I can see it in your eyes. You have the look of a desperate man who accepts any code because he is expecting to wake up of this nightmare." >> README.md
 		
 		echo "" >> README.md
 		
@@ -18,11 +20,11 @@ README.md: guessinggame.sh
 		
 		echo "" >> README.md
 		
-		echo "THE GUESSING GAME?" >> README.md
+		echo "> **[THE GUESSING GAME]**" >> README.md
 		
 		echo "" >> README.md
 		
-		echo "Do you want to know what it is? The Guessing Game is everywhere, it's all around us, here even in this website. You can see it out your window or on your shell. You feel it when you go to work, or go to coursera to pay your taxes. It is the world that has been pulled over your eyes to blind you from the truth." >> README.md
+		echo "Do you want to know what it is? The Guessing Game is everywhere, it's all around us, here even in this website. You can see it out your window or on your shell. You feel it when you go to work, or go to Coursera to pay your taxes. It is the world that has been pulled over your eyes to blind you from the truth." >> README.md
 		
 		echo "" >> README.md
 		
@@ -36,10 +38,21 @@ README.md: guessinggame.sh
 		
 		echo "Sean Kross, are we approved?" >> README.md
 		
-		echo "\n**Number of lines of code in guessinggame.sh**: " >> README.md
+		echo "***" >> README.md
+		
+		echo "> - \n**Lines of code in guessinggame.sh**: " >> README.md
 		grep -c '' guessinggame.sh >> README.md
-		echo "\n**Last Update**: " >> README.md
-		date -R -r README.md >> README.md		
+		echo "- \n**Last Update**: " >> README.md
+		date -R -r README.md >> README.md
+		echo "" >> README.md
+		echo "###### \* Paraphrasing 'The Matrix' Shooting Script by Larry and Andy Wachowski." >> README.md
+		
+		echo "" >> README.md
+		
+		echo "***" >> README.md
+		
+		echo "## Flowchart" >> README.md
+		echo "![flowchart](images/flowchart.png)" >> README.md
 
 clean:
 	rm README.md
