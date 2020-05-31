@@ -8,7 +8,7 @@ README.md: guessinggame.sh
 	touch README.md
 		
 		echo "## Johns Hopkins University | [The Unix Workbench](https://seankross.com/the-unix-workbench/) | Guessing Game." > README.md
-		echo "*An stressful solution to the [Coursera](https://www.coursera.org/learn/unix) proposal*." >> README.md
+		echo "*A stressful solution to the [Coursera](https://www.coursera.org/learn/unix) proposal*." >> README.md
 		
 		echo "" >> README.md
 		
