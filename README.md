@@ -18,10 +18,10 @@ Sean Kross, are we approved?
 ***
 > 
 **Lines of code in guessinggame.sh**: 
-38
+46
 > 
 **Last Update**: 
-Sun, 31 May 2020 23:29:33 +0200
+Mon, 01 Jun 2020 01:05:13 +0200
 
 ###### \* Paraphrasing 'The Matrix' Shooting Script by Larry and Andy Wachowski.
 
