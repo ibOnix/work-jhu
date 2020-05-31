@@ -1,5 +1,5 @@
 ## Johns Hopkins University | [The Unix Workbench](https://seankross.com/the-unix-workbench/) | Guessing Game.
-*An stressful solution to the [Coursera](https://www.coursera.org/learn/unix) proposal*.
+*A stressful solution to the [Coursera](https://www.coursera.org/learn/unix) proposal*.
 
 
 **Synopsis** \*:  I imagine, right now, you must be feeling a bit like Alice, tumbling down the rabbit hole? I can see it in your eyes. You have the look of a desperate man who accepts any code because he is expecting to wake up of this nightmare.
@@ -21,7 +21,7 @@ Sean Kross, are we approved?
 38
 > 
 **Last Update**: 
-Sun, 31 May 2020 18:22:52 +0200
+Sun, 31 May 2020 23:29:33 +0200
 
 ###### \* Paraphrasing 'The Matrix' Shooting Script by Larry and Andy Wachowski.
 
