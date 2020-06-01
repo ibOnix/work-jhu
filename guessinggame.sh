@@ -16,8 +16,9 @@ else
 	echo "You take the blue pill and the story ends."
 	exit 0
 fi
-	
+
 function check_answer {
+local answer_ok=0
 	read attempt
 	if [[ $attempt =~ ^[0-9]+$ ]]
 	then
@@ -25,6 +26,7 @@ function check_answer {
 		if [[ $attempt -eq $answer ]]
 		then
 			echo -e "You have only needed $times attempts... You are the One ; )\nReady for more? Change script location."
+			answer_ok=1
 		elif ([[ $attempt -gt $answer ]])
 		then
 			echo "Your guess was too high. Try again:"
@@ -32,11 +34,14 @@ function check_answer {
         	echo "Your guess was too low. Try again:"
         fi
 	else
-		echo "$name, we have a typo, Try again:"
+		echo "$name, we have a typo. Try again:"
 	fi
+
+return $answer_ok
 }
 
-while [[ $attempt -ne $answer ]]
+until [[ $resp_ok -eq 1 ]]
 do
 	check_answer
+    resp_ok=$?
 done
