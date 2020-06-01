@@ -2,6 +2,9 @@
 # file: makefile
 # Author: Simón Palacios
 
+# Variables
+FLOWCHART=${![flowchart](images/flowchart.png)}
+
 all: clean README.md
 
 README.md: guessinggame.sh
@@ -25,7 +28,7 @@ README.md: guessinggame.sh
 		echo "###### \* Paraphrasing 'The Matrix' Shooting Script by Larry and Andy Wachowski. \n" >> README.md
 		echo "***" >> README.md
 		echo "## Flowchart" >> README.md
-		echo "![flowchart](images/flowchart.png)" >> README.md
+		echo ${FLOWCHART} >> README.md
 
 clean:
 	rm README.md
