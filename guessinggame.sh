@@ -2,12 +2,12 @@
 # file: guessinggame.sh
 
 # Variables
-answer=$(find . -maxdepth 1 -type f -name '[!.]*'| wc -l)
 times=0
+answer=$(find . -maxdepth 1 -type f -name '[!.]*'| wc -l)
 
-echo "Hello, what's your nickname?"
+echo "What's your code name?"
 read name
-echo "Welcome to The Guessing Game, $name. Do you want to know what it is about? (y / n)"
+echo "Welcome to The Guessing Game, $name. Do you want to know what it is about? (y/n)"
 read response
 
 if [[ $response =~ ^[y|Y]$ ]]
@@ -15,7 +15,7 @@ then
 	echo "After this, there's no going back..."
 	echo "How many files are in the current directory?"
 else
-	echo "Seriously? You kill me... and the script too! You choose the blue pill."
+	echo "You take the blue pill and the story ends."
 	exit
 fi
 	
@@ -28,12 +28,12 @@ function check {
 		then
 			echo "You only have needed $times attempts... You are the One ; )"
 			echo "Ready for more? Change script location."
-		elif [[ $attempt -gt $answer ]] && echo "Your guess $attempt was too high." || echo "Your guess $attempt was too low."
+		elif [[ $attempt -gt $answer ]] && echo "Your guess was too high." || echo "Your guess was too low."
 		then
-			echo "Targeting... almost there. Try again."
+			echo "Targeting... almost there. Try again:"
 		fi
 	else
-		echo "$name, we have a typo."
+		echo "$name, we have a typo, try again:"
 	fi
 }
 
