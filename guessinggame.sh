@@ -21,9 +21,9 @@ fi
 	
 function check_answer {
 	read attempt
-	times=$(($times + 1))
 	if [[ $attempt =~ ^[0-9]+$ ]]
 	then
+		times=$(($times + 1))
 		if [[ $attempt -eq $answer ]]
 		then
 			echo "You only have needed $times attempts... You are the One ; )"

@@ -14,14 +14,14 @@ You are a slave. Like everyone else, you payed your subscription, hoping the cou
 
 This is your last chance. After this, there is no going back. You take the blue pill and the story ends. You try your best and you believe whatever you want to believe. You take the red pill and you stay in Wonderland and I show you how deep my bash code goes. Remember that all I am offering is the truth. Don't think it will work. 
 
-Sean Kross, are we approved? 
-
+Sean Kross, are we approved?
+***
 > 
 **Lines of code in guessinggame.sh**: 
 44
 > 
 **Last Update**: 
-Mon, 01 Jun 2020 18:17:06 +0200
+Mon, 01 Jun 2020 18:25:29 +0200
 
 ###### \* Paraphrasing 'The Matrix' Shooting Script by Larry and Andy Wachowski. 
 
