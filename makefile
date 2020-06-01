@@ -20,7 +20,7 @@ ${F_HELP}: guessinggame.sh
 		echo "Sean Kross, are we approved? \n" >> ${F_HELP}
 		echo "> **Lines of code in guessinggame.sh**: " >> ${F_HELP}
 		grep -c '' guessinggame.sh >> ${F_HELP}
-		echo "> \n**Last Update**: " >> ${F_HELP}
+		echo "> **Last Update**: " >> ${F_HELP}
 		date -R -r ${F_HELP} >> ${F_HELP}
 		echo "" >> ${F_HELP}
 		echo "###### \* Paraphrasing 'The Matrix' Shooting Script by Larry and Andy Wachowski. \n" >> ${F_HELP}
