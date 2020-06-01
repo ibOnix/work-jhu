@@ -17,7 +17,8 @@ ${F_HELP}: guessinggame.sh
 		echo "Do you want to know what it is? The Guessing Game is everywhere, it's all around us, here even in this website. You can see it out your window or on your shell. You feel it when you go to work, or go to Coursera to pay your taxes. It is the world that has been pulled over your eyes to blind you from the truth. \n" >> ${F_HELP}
 		echo "You are a slave. Like everyone else, you payed your subscription, hoping the course would be easier, well guided, with a lot of videos. A prison for your mind. Unfortunately, no one can be told what code the Guessing Game is. You have to see it for yourself. \n" >> ${F_HELP}
 		echo "This is your last chance. After this, there is no going back. You take the blue pill and the story ends. You try your best and you believe whatever you want to believe. You take the red pill and you stay in Wonderland and I show you how deep my bash code goes. Remember that all I am offering is the truth. Don't think it will work. \n" >> ${F_HELP}
-		echo "Sean Kross, are we approved?" >> ${F_HELP}
+		echo "Sean Kross, are we approved? \n" >> ${F_HELP}
+		echo "***" >> ${F_HELP}
 		echo "> \n**Lines of code in guessinggame.sh**: " >> ${F_HELP}
 		grep -c '' guessinggame.sh >> ${F_HELP}
 		echo "> \n**Last Update**: " >> ${F_HELP}
@@ -27,7 +28,6 @@ ${F_HELP}: guessinggame.sh
 		echo "***" >> ${F_HELP}
 		echo "## Flowchart" >> ${F_HELP}
 		echo "![flowchart]${FLOWCHART}" >> ${F_HELP}
-
 
 clean:
 	rm ${F_HELP}
