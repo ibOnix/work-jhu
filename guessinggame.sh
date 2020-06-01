@@ -9,7 +9,7 @@ read name
 echo "Welcome to The Guessing Game, $name. Do you want to know what it is about? (y / n)"
 read response
 
-if [[ $response =~ y ]]
+if [[ $response =~ ^[y|Y]$ ]]
 then
 	echo "After this, there's no going back..."
 	echo "How many files are in the current directory?"
@@ -22,7 +22,7 @@ function check {
 	read attempt
 	times=$(($times + 1))
 	
-	if [[ $attempt =~ [0-9] ]]
+	if [[ $attempt =~ ^[0-9]+$ ]]
 	then
 	
 		if [[ $attempt -eq $answer ]]
