@@ -21,10 +21,10 @@ Sean Kross, are we approved?
 44
 > 
 **Last Update**: 
-Mon, 01 Jun 2020 18:11:44 +0200
+Mon, 01 Jun 2020 18:17:06 +0200
 
 ###### \* Paraphrasing 'The Matrix' Shooting Script by Larry and Andy Wachowski. 
 
 ***
 ## Flowchart
-
+![flowchart](images/flowchart.png)
