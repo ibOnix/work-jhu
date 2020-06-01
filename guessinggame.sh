@@ -1,6 +1,7 @@
-#!/usr/bin/env bash
-# guessinggame.sh
+#!/bin/bash
+# file: guessinggame.sh
 
+# Variables
 answer=$(find . -maxdepth 1 -type f -name '[!.]*'| wc -l)
 times=0
 
@@ -21,20 +22,16 @@ fi
 function check {
 	read attempt
 	times=$(($times + 1))
-	
 	if [[ $attempt =~ ^[0-9]+$ ]]
 	then
-	
 		if [[ $attempt -eq $answer ]]
 		then
 			echo "You only have needed $times attempts... You are the One ; )"
 			echo "Ready for more? Change script location."
-
 		elif [[ $attempt -gt $answer ]] && echo "Your guess $attempt was too high." || echo "Your guess $attempt was too low."
 		then
 			echo "Targeting... almost there. Try again."
 		fi
-		
 	else
 		echo "$name, we have a typo."
 	fi
