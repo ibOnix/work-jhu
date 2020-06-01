@@ -2,7 +2,7 @@
 # file: makefile
 # Author: Simón Palacios
 
-FLOWCHART=(images/flowchart.png)
+FLOWCHART=(https://www.kilobyte.es/diseno_web-recursos/code/GitHub/work-jhu-flowchart.png)
 F_HELP="README.md"
 
 all: clean ${F_HELP}

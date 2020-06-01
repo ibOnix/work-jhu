@@ -2,7 +2,7 @@
 # file: guessinggame.sh
 
 times=0
-answer=$(find . -maxdepth 1 -type f -name '[!.]*'| wc -l)
+answer=$(find . -maxdepth 1 -type f -name | wc -l)
 
 echo "What's your nickname?"
 read name
