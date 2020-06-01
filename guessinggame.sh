@@ -36,7 +36,6 @@ local answer_ok=0
 	else
 		echo "$name, we have a typo. Try again:"
 	fi
-
 return $answer_ok
 }
 
