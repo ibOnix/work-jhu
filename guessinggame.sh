@@ -2,11 +2,10 @@
 # file: guessinggame.sh
 # Author: Simón Palacios
 
-# Variables
-TIMES=0
-ANSWER=$(find . -maxdepth 1 -type f -name '[!.]*'| wc -l)
+times=0
+answer=$(find . -maxdepth 1 -type f -name '[!.]*'| wc -l)
 
-echo "What's your code name?"
+echo "What's your nickname?"
 read name
 echo "Welcome to The Guessing Game, $name. Do you want to know what it is about? (y/n)"
 read response
@@ -22,15 +21,15 @@ fi
 	
 function check_answer {
 	read attempt
-	TIMES=$(($TIMES + 1))
+	times=$(($times + 1))
 	if [[ $attempt =~ ^[0-9]+$ ]]
 	then
-		if [[ $attempt -eq $ANSWER ]]
+		if [[ $attempt -eq $answer ]]
 		then
-			echo "You only have needed $TIMES attempts... You are the One ; )"
+			echo "You only have needed $times attempts... You are the One ; )"
 			echo "Ready for more? Change script location."
 			exit 1
-		elif ([[ $attempt -gt $ANSWER ]] && echo "Your guess was too high.") || echo "Your guess was too low."
+		elif ([[ $attempt -gt $answer ]] && echo "Your guess was too high.") || echo "Your guess was too low."
 		then
 			echo "Targeting... almost there. Try again:"
 		fi
@@ -39,7 +38,7 @@ function check_answer {
 	fi
 }
 
-while [[ $attempt -ne $ANSWER ]]
+while [[ $attempt -ne $answer ]]
 do
 	check_answer
 done
