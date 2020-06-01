@@ -1,6 +1,5 @@
 #!/bin/bash
 # file: guessinggame.sh
-# Author: Simón Palacios
 
 times=0
 answer=$(find . -maxdepth 1 -type f -name '[!.]*'| wc -l)
@@ -25,13 +24,15 @@ function check_answer {
 		times=$(($times + 1))
 		if [[ $attempt -eq $answer ]]
 		then
-			echo -e "You only have needed $times attempts... You are the One ; )\nReady for more? Change script location."
-		elif [[ $attempt -gt $answer ]] && echo "Your guess was too high." || echo "Your guess was too low."
+			echo -e "You have only needed $times attempts... You are the One ; )\nReady for more? Change script location."
+		elif ([[ $attempt -gt $answer ]])
 		then
-			echo "Targeting... almost there. Try again:"
-		fi
+			echo "Your guess was too high. Try again:"
+		else
+        	echo "Your guess was too low. Try again:"
+        fi
 	else
-		echo "$name, we have a typo, try again:"
+		echo "$name, we have a typo, Try again:"
 	fi
 }
 
