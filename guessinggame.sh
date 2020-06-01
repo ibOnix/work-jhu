@@ -1,9 +1,10 @@
 #!/bin/bash
 # file: guessinggame.sh
+# Author: Simón Palacios
 
 # Variables
-times=0
-answer=$(find . -maxdepth 1 -type f -name '[!.]*'| wc -l)
+TIMES=0
+ANSWER=$(find . -maxdepth 1 -type f -name '[!.]*'| wc -l)
 
 echo "What's your code name?"
 read name
@@ -16,19 +17,20 @@ then
 	echo "How many files are in the current directory?"
 else
 	echo "You take the blue pill and the story ends."
-	exit
+	exit 0
 fi
 	
-function check {
+function check_answer {
 	read attempt
-	times=$(($times + 1))
+	TIMES=$(($TIMES + 1))
 	if [[ $attempt =~ ^[0-9]+$ ]]
 	then
-		if [[ $attempt -eq $answer ]]
+		if [[ $attempt -eq $ANSWER ]]
 		then
-			echo "You only have needed $times attempts... You are the One ; )"
+			echo "You only have needed $TIMES attempts... You are the One ; )"
 			echo "Ready for more? Change script location."
-		elif [[ $attempt -gt $answer ]] && echo "Your guess was too high." || echo "Your guess was too low."
+			exit 1
+		elif ([[ $attempt -gt $ANSWER ]] && echo "Your guess was too high.") || echo "Your guess was too low."
 		then
 			echo "Targeting... almost there. Try again:"
 		fi
@@ -37,7 +39,7 @@ function check {
 	fi
 }
 
-while [[ $attempt -ne $answer ]]
+while [[ $attempt -ne $ANSWER ]]
 do
-	check
+	check_answer
 done
